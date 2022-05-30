@@ -1,0 +1,73 @@
+/* Styles start here */
+body, html {
+    height: 100%;   
+}
+
+.wrappert {
+    height: 100%; 
+    width: 100%;
+   display: table;    
+}
+
+.wrapper {
+    height: 100%;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+}
+
+.main-img{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    background: url('img/plan-low.png') no-repeat center;
+    background-size: 100% 100%;
+    margin:auto;
+}
+
+.first_room {
+    z-index: 10;
+    position: absolute;
+    width: 6%;
+    height: 6%;
+    top: 27.5%;
+    left: 55.5%;
+}
+
+.second-room {
+    z-index: 10;
+    position: absolute;
+    width: 6%;
+    height: 6%;
+    top: 35%;
+    left: 63%;
+}
+
+.button_insta{
+    background: no-repeat center;
+    border: none; 
+    cursor: pointer;
+}
+
+.agrandir {
+    max-width : 100%;
+    height : auto;
+    margin: 0 auto;
+    transition: transform .4s;
+}
+   
+.agrandir:hover {
+    transform: scale(1.5);
+}
+
+#popup-img1 {
+    z-index: 100;
+    position: relative;
+    height: 350px;
+}
+#popup-img2 {
+    z-index: 200;
+    position: relative;
+    height: 350px;
+}
+
