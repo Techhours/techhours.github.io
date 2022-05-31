@@ -18,36 +18,70 @@ body, html {
 
 .main-img{
     position: relative;
-    width: 80%;
+    width: 70%;
     height: 100%;
     background: url('img/plan-low.png') no-repeat center;
     background-size: 100% 100%;
     margin:auto;
 }
 
-.first_room {
+.room{
     z-index: 10;
     position: absolute;
-    width: 5%;
-    height: 5%;
+    width: 6%;
+    height: 6%;
+}
+.room2{
+    z-index: 10;
+    position: absolute;
+    width: 4.85%;
+    height: 4.85%;
+}
+
+.first_room {
     top: 23%;
-    left: 45.5%;
+    left: 45.25%;
 }
 .second-room {
-    z-index: 10;
-    position: absolute;
-    width: 5%;
-    height: 5%;
-    top: 27.5%;
-    left: 53.5%;
+    
+    top: 28%;
+    left: 53.25%;
 }
-.thrid-room {
-    z-index: 10;
-    position: absolute;
-    width: 5%;
-    height: 5%;
-    top: 32.5%;
-    left: 61%;
+.third-room {
+    top: 32.75%;
+    left: 60.40%;
+}
+.fourth-room {
+    top: 47.5%;
+    left: 22%;
+}
+.fifth-room {
+    top: 52.5%;
+    left: 30%;
+}
+.sixth-room {
+    top: 35%;
+    left: 83%;
+}
+.seventh-room {
+    top: 79%;
+    left: 12.75%;
+}
+.eighth-room {
+    top: 84%;
+    left: 20.75%;
+}
+.ninth-room {
+    top: 89%;
+    left: 28%;
+}
+.tenth-room {
+    top: 88%;
+    left: 81.5%;
+}
+.eleventh-room {
+    top: 1.75%;
+    left: 84.25%;
 }
 
 .button_insta{
@@ -67,19 +101,10 @@ body, html {
     transform: scale(1.5);
 }
 
-#popup-img1 {
+#popup-img {
     z-index: 100;
     position: relative;
     height: 350px;
 }
-#popup-img2 {
-    z-index: 200;
-    position: relative;
-    height: 350px;
-}
-#popup-img3 {
-    z-index: 200;
-    position: relative;
-    height: 350px;
-}
+
 
