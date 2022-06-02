@@ -43,7 +43,6 @@ body, html {
     left: 45.25%;
 }
 .second-room {
-    
     top: 28%;
     left: 53.25%;
 }
@@ -101,15 +100,21 @@ body, html {
     transform: scale(1.5);
 }
 
+.agrandir_arrow{
+    max-width : 100%;
+    height : auto;
+    margin: 0 auto;
+    transition: transform .4s;
+}
+
+.agrandir_arrow:hover {
+    transform: scale(1.5);
+}
+
 #popup-img {
     z-index: 100;
     position: relative;
     height: 350px;
-}
-
-.popups {
-    position: relative;
-    width: 600px;
 }
 
 .img-popup {
@@ -119,16 +124,62 @@ body, html {
     height: auto; 
 }
 
-.first-popup {
+.button-arrow {
+    background: no-repeat center;
+    border: none; 
+    cursor: pointer;
+}
+
+.main_img_popup {
+    z-index: 1000;
+    position: absolute;
+    width: 600px;
+    height: 375.15px;
+    
+}
+
+.arrow {
+    z-index: 2000;
+    position: absolute;
+    width: 7%;
+}
+
+.first_popup {
+    background: url('img/POPUP_Grace_Hopper.png') no-repeat center;
+    background-size: 100% 100%;
+    margin:auto;
     top: 28%;
     left: 50%;
     display: none;
 }
 
-.fourth-popup {
-    top: 30%;
-    left: 30%;
+.second_popup {
+    background: url('img/POPUP_Alan_Turing.png') no-repeat center;
+    background-size: 100% 100%;
+    margin:auto;
+    top: 33%;
+    left: 3%;
     display: none;
+}
+
+.first_popup_first_arrow {
+    top: 23%;
+    left: 40%;
+}
+
+.first_popup_second_arrow {
+    top: 64%;
+    left: 40%;
+}
+
+.first_popup_third_arrow {
+    top: 91%;
+    left: 40%;
+}
+
+.second_popup_second_arrow {
+    top: 55%;
+    left: 40%;
 }
 
 .is-visible{
