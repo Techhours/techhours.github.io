@@ -38,5 +38,4 @@ fourth_btn.addEventListener('click', () => {
 
 first_image.addEventListener('click', () => {
     test = true;
-    console.log('test')
 });
