@@ -6,7 +6,7 @@ body, html {
 .wrappert {
     height: 100%; 
     width: 100%;
-   display: table;    
+    display: table;    
 }
 
 .wrapper {
@@ -18,7 +18,7 @@ body, html {
 
 .main-img{
     position: relative;
-    width: 70%;
+    width: 67.5%;
     height: 100%;
     background: url('img/background_empty.png') no-repeat center;
     background-size: 100% 100%;
@@ -107,4 +107,30 @@ body, html {
     height: 350px;
 }
 
+.popups {
+    position: relative;
+    width: 600px;
+}
 
+.img-popup {
+    z-index: 100;
+    position: relative;
+    width: 100%;
+    height: auto; 
+}
+
+.first-popup {
+    top: 28%;
+    left: 50%;
+    display: none;
+}
+
+.fourth-popup {
+    top: 30%;
+    left: 30%;
+    display: none;
+}
+
+.is-visible{
+    display: block;
+}

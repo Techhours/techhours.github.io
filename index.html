@@ -13,8 +13,10 @@
         <div class = "wrappert">
             <div class = "wrapper">
                 <div class="main-img">
+
+                    <!-- Placement de tous les boutons permettant d'afficher ou non les popups -->
                     <div class="room first_room">
-                        <button type="button" id="popup1" class="button_insta" >
+                        <button type="button" id="popup1" class="button_insta first_button" >
                             <img class="agrandir" src="img/blue_hand.png" />
                         </button>
                     </div>
@@ -29,7 +31,7 @@
                         </button>
                     </div>
                     <div class="room fourth-room">
-                        <button type="button" id="popup4" class="button_insta" >
+                        <button type="button" id="popup4" class="button_insta fourth_button" >
                             <img class="agrandir" src="img/blue_hand.png" />
                         </button>
                     </div>
@@ -68,82 +70,24 @@
                             <a href="https://www.instagram.com/johan_vargas_/" target="_blank"><img class="agrandir insta_button" src="img/red_hand.png" /></a>
                         </button>
                     </div>
+
+                    <!-- Partie pour les popups -->
+                    <div class="popups first-popup">   
+                        <img src="img/POPUP_dune_du_pyla.png" alt="premiere popup" class="img-popup img-popup-1" usemap="#zones-reactives">
+                        <map name="zones-reactives">
+                            <area shape="rect" coords="120,10,340,140" href="https://www.refectory.fr/" target="_blank"/>
+                            <area shape="rect" coords="120,150,340,260" href="https://www.instagram.com/johan_vargas_/" target="_blank"/>
+                            <area shape="rect" coords="120,275,340,375" href="https://www.instagram.com/johan_vargas_/" target="_blank"/>
+                        </map>
+                    </div>
+                    <div class="popups fourth-popup">   
+                        <img src="img/POP-UP-01.png" alt="seconde popup" class="img-popup">
+                    </div>
+
                 </div>
             </div>
         </div>
+        <script src = "app.js"> </script>
     </body>
-
-    <script>
-        $('#popup1').popover({
-            trigger: 'focus',
-            placement: 'auto',
-            container: 'body',
-            html: true,
-            content: '<a href="https://voip-siinergy-net.3cx.net/open/f251354305bbf8d3583d5a5bde4b631e20638ed2" target="_blank"><img  src="img/POP-UP-01.png" id="popup-img"></a>'
-        })
-        $('#popup2').popover({
-            trigger: 'focus',
-            placement: 'auto',
-            container: 'body',
-            html: true,
-            content: '<a href="https://voip-siinergy-net.3cx.net/webrtc/open/896a3ea24c5c8e8eec29b1a28fd99b937027b1c9" target="_blank"><img  src="img/POP-UP-02.png" id="popup-img"></a>'
-        })
-        $('#popup3').popover({
-            trigger: 'focus',
-            placement: 'auto',
-            container: 'body',
-            html: true,
-            content: '<a href="https://voip-siinergy-net.3cx.net/webrtc/open/896a3ea24c5c8e8eec29b1a28fd99b937027b1c9" target="_blank"><img src="img/POP-UP-03.png" id="popup-img"></a>'
-        })
-        $('#popup4').popover({
-            trigger: 'focus',
-            placement: 'auto',
-            container: 'body',
-            html: true,
-            content: '<a href="https://voip-siinergy-net.3cx.net/webrtc/open/896a3ea24c5c8e8eec29b1a28fd99b937027b1c9" target="_blank"><img src="img/POP-UP-04.png" id="popup-img"></a>'
-        })
-        $('#popup5').popover({
-            trigger: 'focus',
-            placement: 'auto',
-            container: 'body',
-            html: true,
-            content: '<a href="https://voip-siinergy-net.3cx.net/webrtc/open/896a3ea24c5c8e8eec29b1a28fd99b937027b1c9" target="_blank"><img src="img/POP-UP-05.png" id="popup-img"></a>'
-        })
-        $('#popup6').popover({
-            trigger: 'focus',
-            placement: 'auto',
-            container: 'body',
-            html: true,
-            content: '<a href="https://voip-siinergy-net.3cx.net/webrtc/open/896a3ea24c5c8e8eec29b1a28fd99b937027b1c9" target="_blank"><img src="img/POP-UP-05.png" id="popup-img"></a>'
-        })
-        $('#popup7').popover({
-            trigger: 'focus',
-            placement: 'auto',
-            container: 'body',
-            html: true,
-            content: '<a href="https://voip-siinergy-net.3cx.net/webrtc/open/896a3ea24c5c8e8eec29b1a28fd99b937027b1c9" target="_blank"><img src="img/POP-UP-05.png" id="popup-img"></a>'
-        })
-        $('#popup8').popover({
-            trigger: 'focus',
-            placement: 'auto',
-            container: 'body',
-            html: true,
-            content: '<a href="https://voip-siinergy-net.3cx.net/webrtc/open/896a3ea24c5c8e8eec29b1a28fd99b937027b1c9" target="_blank"><img src="img/POP-UP-05.png" id="popup-img"></a>'
-        })
-        $('#popup9').popover({
-            trigger: 'focus',
-            placement: 'auto',
-            container: 'body',
-            html: true,
-            content: '<a href="https://voip-siinergy-net.3cx.net/webrtc/open/896a3ea24c5c8e8eec29b1a28fd99b937027b1c9" target="_blank"><img src="img/POP-UP-05.png" id="popup-img"></a>'
-        })
-        $('#popup10').popover({
-            trigger: 'focus',
-            placement: 'auto',
-            container: 'body',
-            html: true,
-            content: '<a href="https://voip-siinergy-net.3cx.net/webrtc/open/896a3ea24c5c8e8eec29b1a28fd99b937027b1c9" target="_blank"><img src="img/POP-UP-05.png" id="popup-img"></a>'
-        })
-    </script>
 
 </html>
