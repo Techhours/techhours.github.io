@@ -133,9 +133,9 @@ body, html {
 .main_img_popup {
     z-index: 1000;
     position: absolute;
-    width: 600px;
-    height: 375.15px;
-    
+    width: 47.5%;
+    height: 57.5%;
+
 }
 
 .arrow {
@@ -158,7 +158,25 @@ body, html {
     background-size: 100% 100%;
     margin:auto;
     top: 33%;
-    left: 3%;
+    left: 5%;
+    display: none;
+}
+
+.third_popup {
+    background: url('img/POPUP_Mary_Jackson.png') no-repeat center;
+    background-size: 100% 100%;
+    margin:auto;
+    top: 38%;
+    left: 10%;
+    display: none;
+}
+
+.fourth_popup {
+    background: url('img/POPUP_Ada_Lovelace.png') no-repeat center;
+    background-size: 100% 100%;
+    margin:auto;
+    top: 25%;
+    left: 37%;
     display: none;
 }
 
@@ -179,6 +197,11 @@ body, html {
 
 .second_popup_second_arrow {
     top: 55%;
+    left: 40%;
+}
+
+.fourth_popup_third_arrow {
+    top: 93.5%;
     left: 40%;
 }
 
