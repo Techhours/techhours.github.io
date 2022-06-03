@@ -6,6 +6,8 @@ const third_btn = document.querySelector('.third_button');
 const third_popup = document.querySelector('.third_popup');
 const fourth_btn = document.querySelector('.fourth_button');
 const fourth_popup = document.querySelector('.fourth_popup');
+const fifth_btn = document.querySelector('.fifth_button');
+const fifth_popup = document.querySelector('.fifth_popup');
 const background = document.querySelector('.wrappert');
 
 
@@ -22,6 +24,9 @@ let block3 = false;
 let isVisible4 = false;
 let clicked4 = false;
 let block4 = false;
+let isVisible5 = false;
+let clicked5 = false;
+let block5 = false;
 
 
 
@@ -30,6 +35,7 @@ background.addEventListener('click',  () => {
     if (!clicked2 && block2 == false) { second_popup.classList.remove('is-visible'); isVisible2 = false; }
     if (!clicked3 && block3 == false) { third_popup.classList.remove('is-visible'); isVisible3 = false; }
     if (!clicked4 && block4 == false) { fourth_popup.classList.remove('is-visible'); isVisible4 = false; }
+    if (!clicked5 && block5 == false) { fifth_popup.classList.remove('is-visible'); isVisible5 = false; }
 
     clicked1 = false;
     clicked2 = false;
@@ -39,6 +45,8 @@ background.addEventListener('click',  () => {
     block2 = false;
     block3 = false;
     block4 = false;
+    clicked5 = false;
+    block5 = false;
     
 });
 
@@ -66,6 +74,12 @@ fourth_btn.addEventListener('click', () => {
     isVisible4 ? fourth_popup.classList.add('is-visible') : fourth_popup.classList.remove('is-visible');
 });
 
+fifth_btn.addEventListener('click', () => {
+    clicked5 = true;
+    isVisible5 = !isVisible5;
+    isVisible5 ? fifth_popup.classList.add('is-visible') : fifth_popup.classList.remove('is-visible');
+});
+
 first_popup.addEventListener('click', () => {
     block1 = true;
 });
@@ -80,4 +94,8 @@ third_popup.addEventListener('click', () => {
 
 fourth_popup.addEventListener('click', () => {
     block4 = true;
+});
+
+fifth_popup.addEventListener('click', () => {
+    block5 = true;
 });
