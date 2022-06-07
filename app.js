@@ -8,6 +8,12 @@ const fourth_btn = document.querySelector('.fourth_button');
 const fourth_popup = document.querySelector('.fourth_popup');
 const fifth_btn = document.querySelector('.fifth_button');
 const fifth_popup = document.querySelector('.fifth_popup');
+const sixth_btn = document.querySelector('.sixth_button');
+const sixth_popup = document.querySelector('.sixth_popup');
+const seventh_btn = document.querySelector('.seventh_button');
+const seventh_popup = document.querySelector('.seventh_popup');
+const eighth_btn = document.querySelector('.eighth_button');
+const eighth_popup = document.querySelector('.eighth_popup');
 const background = document.querySelector('.wrappert');
 
 
@@ -27,15 +33,27 @@ let block4 = false;
 let isVisible5 = false;
 let clicked5 = false;
 let block5 = false;
+let isVisible6 = false;
+let clicked6 = false;
+let block6 = false;
+let isVisible7 = false;
+let clicked7 = false;
+let block7 = false;
+let isVisible8 = false;
+let clicked8 = false;
+let block8 = false;
 
 
 
 background.addEventListener('click',  () => {
-    if (!clicked1 && block1 == false) { first_popup.classList.remove('is-visible'); isVisible1 = false; }
-    if (!clicked2 && block2 == false) { second_popup.classList.remove('is-visible'); isVisible2 = false; }
-    if (!clicked3 && block3 == false) { third_popup.classList.remove('is-visible'); isVisible3 = false; }
-    if (!clicked4 && block4 == false) { fourth_popup.classList.remove('is-visible'); isVisible4 = false; }
-    if (!clicked5 && block5 == false) { fifth_popup.classList.remove('is-visible'); isVisible5 = false; }
+    if (!clicked1 && block1 == false) { first_popup.classList.remove('transition_opacity'); isVisible1 = false; }
+    if (!clicked2 && block2 == false) { second_popup.classList.remove('transition_opacity'); isVisible2 = false; }
+    if (!clicked3 && block3 == false) { third_popup.classList.remove('transition_opacity'); isVisible3 = false; }
+    if (!clicked4 && block4 == false) { fourth_popup.classList.remove('transition_opacity'); isVisible4 = false; }
+    if (!clicked5 && block5 == false) { fifth_popup.classList.remove('transition_opacity'); isVisible5 = false; }
+    if (!clicked6 && block6 == false) { sixth_popup.classList.remove('transition_opacity'); isVisible6 = false; }
+    if (!clicked7 && block7 == false) { seventh_popup.classList.remove('transition_opacity'); isVisible7 = false; }
+    if (!clicked8 && block8 == false) { eighth_popup.classList.remove('transition_opacity'); isVisible8 = false; }
 
     clicked1 = false;
     clicked2 = false;
@@ -47,37 +65,61 @@ background.addEventListener('click',  () => {
     block4 = false;
     clicked5 = false;
     block5 = false;
+    clicked6 = false;
+    block6 = false;
+    clicked7 = false;
+    block7 = false;
+    clicked8 = false;
+    block8 = false;
     
 });
 
 first_btn.addEventListener('click', () => {
     clicked1 = true;
     isVisible1 = !isVisible1;
-    isVisible1 ? first_popup.classList.add('is-visible') : first_popup.classList.remove('is-visible');
+    isVisible1 ? first_popup.classList.add('transition_opacity') : first_popup.classList.remove('transition_opacity');
 });
 
 second_btn.addEventListener('click', () => {
     clicked2 = true;
     isVisible2 = !isVisible2;
-    isVisible2 ? second_popup.classList.add('is-visible') : second_popup.classList.remove('is-visible');
+    isVisible2 ? second_popup.classList.add('transition_opacity') : second_popup.classList.remove('transition_opacity');
 });
 
 third_btn.addEventListener('click', () => {
     clicked3 = true;
     isVisible3 = !isVisible3;
-    isVisible3 ? third_popup.classList.add('is-visible') : third_popup.classList.remove('is-visible');
+    isVisible3 ? third_popup.classList.add('transition_opacity') : third_popup.classList.remove('transition_opacity');
 });
 
 fourth_btn.addEventListener('click', () => {
     clicked4 = true;
     isVisible4 = !isVisible4;
-    isVisible4 ? fourth_popup.classList.add('is-visible') : fourth_popup.classList.remove('is-visible');
+    isVisible4 ? fourth_popup.classList.add('transition_opacity') : fourth_popup.classList.remove('transition_opacity');
 });
 
 fifth_btn.addEventListener('click', () => {
     clicked5 = true;
     isVisible5 = !isVisible5;
-    isVisible5 ? fifth_popup.classList.add('is-visible') : fifth_popup.classList.remove('is-visible');
+    isVisible5 ? fifth_popup.classList.add('transition_opacity') : fifth_popup.classList.remove('transition_opacity');
+});
+
+sixth_btn.addEventListener('click', () => {
+    clicked6 = true;
+    isVisible6 = !isVisible6;
+    isVisible6 ? sixth_popup.classList.add('transition_opacity') : sixth_popup.classList.remove('transition_opacity');
+});
+
+seventh_btn.addEventListener('click', () => {
+    clicked7 = true;
+    isVisible7 = !isVisible7;
+    isVisible7 ? seventh_popup.classList.add('transition_opacity') : seventh_popup.classList.remove('transition_opacity');
+});
+
+eighth_btn.addEventListener('click', () => {
+    clicked8 = true;
+    isVisible8 = !isVisible8;
+    isVisible8 ? eighth_popup.classList.add('transition_opacity') : eighth_popup.classList.remove('transition_opacity');
 });
 
 first_popup.addEventListener('click', () => {
@@ -98,4 +140,16 @@ fourth_popup.addEventListener('click', () => {
 
 fifth_popup.addEventListener('click', () => {
     block5 = true;
+});
+
+sixth_popup.addEventListener('click', () => {
+    block6 = true;
+});
+
+seventh_popup.addEventListener('click', () => {
+    block7 = true;
+});
+
+eighth_popup.addEventListener('click', () => {
+    block8 = true;
 });
