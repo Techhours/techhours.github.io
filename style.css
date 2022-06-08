@@ -219,6 +219,22 @@ img {
     left: 37.5%;
 }
 
+.ninth_popup {
+    background: url('img/POPUP_miroir_eau.png') no-repeat center;
+    background-size: 100% 100%;
+    margin:auto;
+    top: 31%;
+    left: 42%;
+}
+
+.tenth_popup {
+    background: url('img/POPUP_Einstein.png') no-repeat center;
+    background-size: 100% 100%;
+    margin:auto;
+    top: 31%;
+    left: 42%;
+}
+
 .first_popup_first_arrow {
     top: 23%;
     left: 40%;
@@ -272,7 +288,7 @@ img {
     left: 0%;
     right: 0%;
     top: 0%;
-    bottom: -200%;
+    bottom: -230%;
     background: linear-gradient(178.01deg, #55A0D8 18.85%, #82B942 73.69%);
 }
 

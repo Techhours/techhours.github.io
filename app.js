@@ -14,6 +14,10 @@ const seventh_btn = document.querySelector('.seventh_button');
 const seventh_popup = document.querySelector('.seventh_popup');
 const eighth_btn = document.querySelector('.eighth_button');
 const eighth_popup = document.querySelector('.eighth_popup');
+const ninth_btn = document.querySelector('.ninth_button');
+const ninth_popup = document.querySelector('.ninth_popup');
+const tenth_btn = document.querySelector('.tenth_button');
+const tenth_popup = document.querySelector('.tenth_popup');
 const background = document.querySelector('.wrappert');
 
 
@@ -42,6 +46,12 @@ let block7 = false;
 let isVisible8 = false;
 let clicked8 = false;
 let block8 = false;
+let isVisible9 = false;
+let clicked9 = false;
+let block9 = false;
+let isVisible10 = false;
+let clicked10 = false;
+let block10 = false;
 
 
 
@@ -54,6 +64,8 @@ background.addEventListener('click',  () => {
     if (!clicked6 && block6 == false) { sixth_popup.classList.remove('transition_opacity'); isVisible6 = false; }
     if (!clicked7 && block7 == false) { seventh_popup.classList.remove('transition_opacity'); isVisible7 = false; }
     if (!clicked8 && block8 == false) { eighth_popup.classList.remove('transition_opacity'); isVisible8 = false; }
+    if (!clicked9 && block9 == false) { ninth_popup.classList.remove('transition_opacity'); isVisible9 = false; }
+    if (!clicked10 && block10 == false) { tenth_popup.classList.remove('transition_opacity'); isVisible10 = false; }
 
     clicked1 = false;
     clicked2 = false;
@@ -71,6 +83,10 @@ background.addEventListener('click',  () => {
     block7 = false;
     clicked8 = false;
     block8 = false;
+    clicked9 = false;
+    block9 = false;
+    clicked10 = false;
+    block10 = false;
     
 });
 
@@ -122,6 +138,18 @@ eighth_btn.addEventListener('click', () => {
     isVisible8 ? eighth_popup.classList.add('transition_opacity') : eighth_popup.classList.remove('transition_opacity');
 });
 
+ninth_btn.addEventListener('click', () => {
+    clicked9 = true;
+    isVisible9 = !isVisible9;
+    isVisible9 ? ninth_popup.classList.add('transition_opacity') : ninth_popup.classList.remove('transition_opacity');
+});
+
+tenth_btn.addEventListener('click', () => {
+    clicked10 = true;
+    isVisible10 = !isVisible10;
+    isVisible10 ? tenth_popup.classList.add('transition_opacity') : tenth_popup.classList.remove('transition_opacity');
+});
+
 first_popup.addEventListener('click', () => {
     block1 = true;
 });
@@ -152,4 +180,12 @@ seventh_popup.addEventListener('click', () => {
 
 eighth_popup.addEventListener('click', () => {
     block8 = true;
+});
+
+ninth_popup.addEventListener('click', () => {
+    block9 = true;
+});
+
+tenth_popup.addEventListener('click', () => {
+    block10 = true;
 });
