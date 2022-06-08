@@ -20,38 +20,60 @@ const tenth_btn = document.querySelector('.tenth_button');
 const tenth_popup = document.querySelector('.tenth_popup');
 const background = document.querySelector('.wrappert');
 
+const shortcut_1 = document.querySelector('.shortcut_1')
+const shortcut_2 = document.querySelector('.shortcut_2')
+const shortcut_3 = document.querySelector('.shortcut_3')
+const shortcut_4 = document.querySelector('.shortcut_4')
+const shortcut_5 = document.querySelector('.shortcut_5')
+const shortcut_6 = document.querySelector('.shortcut_6')
+const shortcut_7 = document.querySelector('.shortcut_7')
+const shortcut_8 = document.querySelector('.shortcut_8')
+const shortcut_9 = document.querySelector('.shortcut_9')
+const shortcut_10 = document.querySelector('.shortcut_10')
+const shortcut_11 = document.querySelector('.shortcut_11')
+const shortcut_12 = document.querySelector('.shortcut_12')
+const shortcut_13 = document.querySelector('.shortcut_13')
+const shortcut_14 = document.querySelector('.shortcut_14')
+const shortcut_15 = document.querySelector('.shortcut_15')
+const shortcut_16 = document.querySelector('.shortcut_16')
+const shortcut_17 = document.querySelector('.shortcut_17')
+const shortcut_18 = document.querySelector('.shortcut_18')
+const shortcut_19 = document.querySelector('.shortcut_19')
+const shortcut_20 = document.querySelector('.shortcut_20')
+const shortcut_21 = document.querySelector('.shortcut_21')
+const shortcut_22 = document.querySelector('.shortcut_22')
+const shortcut_23 = document.querySelector('.shortcut_23')
+const shortcut_24 = document.querySelector('.shortcut_24')
+const shortcut_25 = document.querySelector('.shortcut_25')
+const shortcut_26 = document.querySelector('.shortcut_26')
+const shortcut_27 = document.querySelector('.shortcut_27')
+const shortcut_28 = document.querySelector('.shortcut_28')
+const shortcut_29 = document.querySelector('.shortcut_29')
+const shortcut_30 = document.querySelector('.shortcut_30')
+const first_mini_popup = document.querySelector('.first_mini_popup')
+const second_mini_popup = document.querySelector('.second_mini_popup')
+const third_mini_popup = document.querySelector('.third_mini_popup')
+const fourth_mini_popup = document.querySelector('.fourth_mini_popup')
+const fifth_mini_popup = document.querySelector('.fifth_mini_popup')
+const sixth_mini_popup = document.querySelector('.sixth_mini_popup')
+const seventh_mini_popup = document.querySelector('.seventh_mini_popup')
+const eighth_mini_popup = document.querySelector('.eighth_mini_popup')
+const ninth_mini_popup = document.querySelector('.ninth_mini_popup')
+const tenth_mini_popup = document.querySelector('.tenth_mini_popup')
 
 
-let isVisible1 = false;
-let clicked1 = false;
-let block1 = false;
-let isVisible2 = false;
-let clicked2 = false;
-let block2 = false;
-let isVisible3 = false;
-let clicked3 = false;
-let block3 = false;
-let isVisible4 = false;
-let clicked4 = false;
-let block4 = false;
-let isVisible5 = false;
-let clicked5 = false;
-let block5 = false;
-let isVisible6 = false;
-let clicked6 = false;
-let block6 = false;
-let isVisible7 = false;
-let clicked7 = false;
-let block7 = false;
-let isVisible8 = false;
-let clicked8 = false;
-let block8 = false;
-let isVisible9 = false;
-let clicked9 = false;
-let block9 = false;
-let isVisible10 = false;
-let clicked10 = false;
-let block10 = false;
+
+
+let isVisible1 = false; let clicked1 = false; let block1 = false;
+let isVisible2 = false; let clicked2 = false; let block2 = false;
+let isVisible3 = false; let clicked3 = false; let block3 = false;
+let isVisible4 = false; let clicked4 = false; let block4 = false;
+let isVisible5 = false; let clicked5 = false; let block5 = false;
+let isVisible6 = false; let clicked6 = false; let block6 = false;
+let isVisible7 = false; let clicked7 = false; let block7 = false;
+let isVisible8 = false; let clicked8 = false; let block8 = false;
+let isVisible9 = false; let clicked9 = false; let block9 = false;
+let isVisible10 = false; let clicked10 = false; let block10 = false;
 
 
 
@@ -188,4 +210,46 @@ ninth_popup.addEventListener('click', () => {
 
 tenth_popup.addEventListener('click', () => {
     block10 = true;
+});
+
+shortcut_1.addEventListener("mouseenter", () => {
+    first_mini_popup.classList.add('transition_opacity')
+});
+shortcut_1.addEventListener("mouseout", () => {
+    first_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_2.addEventListener("mouseenter", () => {
+    first_mini_popup.classList.add('transition_opacity')
+});
+shortcut_2.addEventListener("mouseout", () => {
+    first_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_3.addEventListener("mouseenter", () => {
+    first_mini_popup.classList.add('transition_opacity')
+});
+shortcut_3.addEventListener("mouseout", () => {
+    first_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_4.addEventListener("mouseenter", () => {
+    second_mini_popup.classList.add('transition_opacity')
+});
+shortcut_4.addEventListener("mouseout", () => {
+    second_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_5.addEventListener("mouseenter", () => {
+    second_mini_popup.classList.add('transition_opacity')
+});
+shortcut_5.addEventListener("mouseout", () => {
+    second_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_6.addEventListener("mouseenter", () => {
+    second_mini_popup.classList.add('transition_opacity')
+});
+shortcut_6.addEventListener("mouseout", () => {
+    second_mini_popup.classList.remove('transition_opacity')
 });

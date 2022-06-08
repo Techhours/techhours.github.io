@@ -29,6 +29,13 @@ img {
     width: 50%;
 }
 
+a:link { 
+ text-decoration:none; 
+} 
+a:hover{
+    color: white;
+}
+
 
 /* ----------------  Partie POPUPS  ---------------------------- */
 
@@ -149,10 +156,22 @@ img {
     -webkit-transition: opacity 0.5s;
 }
 
+.second_img_popup {
+    z-index: 10;
+    position: absolute;
+    top: 150px;
+    left: 325px;
+    width: 47.5%;
+    height: 57.5%;
+    opacity: 0%;
+    transition:opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+}
+
 .arrow {
     z-index: 2000;
     position: absolute;
-    width: 7%;
+    width: 15%;
 }
 
 .first_popup {
@@ -235,19 +254,89 @@ img {
     left: 42%;
 }
 
+.first_mini_popup {
+    z-index: 1;
+    background: url('img/POPUP_Grace_Hopper.png') no-repeat center;
+    background-size: 100% 100%;
+    margin:auto;
+}
+
+.second_mini_popup {
+    z-index: 1;
+    background: url('img/POPUP_Alan_Turing.png') no-repeat center;
+    background-size: 100% 100%;
+    margin:auto;
+}
+
+.third_mini_popup {
+    z-index: 1;
+    background: url('img/POPUP_Mary_Jackson.png') no-repeat center;
+    background-size: 100% 100%;
+    margin:auto;
+}
+
+.fourth_mini_popup {
+    z-index: 1;
+    background: url('img/POPUP_Ada_Lovelace.png') no-repeat center;
+    background-size: 100% 100%;
+    margin:auto;
+}
+
+.fifth_mini_popup {
+    z-index: 1;
+    background: url('img/POPUP_Leonard_De_Vinci.png') no-repeat center;
+    background-size: 100% 100%;
+    margin:auto;
+}
+
+.sixth_mini_popup {
+    z-index: 1;
+    background: url('img/POPUP_Valentina_Terechkova.png') no-repeat center;
+    background-size: 100% 100%;
+    margin:auto;
+}
+
+.seventh_mini_popup {
+    z-index: 1;
+    background: url('img/POPUP_banc_arguin.png') no-repeat center;
+    background-size: 100% 100%;
+    margin:auto;
+}
+
+.eighth_mini_popup {
+    z-index: 1;
+    background: url('img/POPUP_dune_du_pyla.png') no-repeat center;
+    background-size: 100% 100%;
+    margin:auto;
+}
+
+.ninth_mini_popup {
+    z-index: 1;
+    background: url('img/POPUP_miroir_eau.png') no-repeat center;
+    background-size: 100% 100%;
+    margin:auto;
+}
+
+.tenth_mini_popup {
+    z-index: 1;
+    background: url('img/POPUP_Einstein.png') no-repeat center;
+    background-size: 100% 100%;
+    margin:auto;
+}
+
 .first_popup_first_arrow {
-    top: 23%;
-    left: 40%;
+    top: 19%;
+    left: 37%;
 }
 
 .first_popup_second_arrow {
-    top: 64%;
-    left: 40%;
+    top: 60%;
+    left: 37%;
 }
 
 .first_popup_third_arrow {
-    top: 91%;
-    left: 40%;
+    top: 90%;
+    left: 37%;
 }
 
 .second_popup_second_arrow {
@@ -276,6 +365,7 @@ img {
     left: 0px;
     top: 0px;
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 .menu_bot::-webkit-scrollbar {
@@ -288,19 +378,20 @@ img {
     left: 0%;
     right: 0%;
     top: 0%;
-    bottom: -230%;
+    bottom: -2150px;
     background: linear-gradient(178.01deg, #55A0D8 18.85%, #82B942 73.69%);
 }
 
 .presentation_text {
     position: relative; 
     width: 100%;
-    font-family: 'Inter';
+    font-family: 'Lato';
     font-style: normal;
     font-weight: 800;
     left: 0%;
     font-size: 18px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .line {
@@ -312,6 +403,7 @@ img {
     left: 0%;
     font-size: 18px;
     color: #FFFFFF;
+    cursor: default;
 }
 
 .transition_box{
