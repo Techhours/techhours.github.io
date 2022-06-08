@@ -49,7 +49,6 @@ const shortcut_26 = document.querySelector('.shortcut_26')
 const shortcut_27 = document.querySelector('.shortcut_27')
 const shortcut_28 = document.querySelector('.shortcut_28')
 const shortcut_29 = document.querySelector('.shortcut_29')
-const shortcut_30 = document.querySelector('.shortcut_30')
 const first_mini_popup = document.querySelector('.first_mini_popup')
 const second_mini_popup = document.querySelector('.second_mini_popup')
 const third_mini_popup = document.querySelector('.third_mini_popup')
@@ -253,3 +252,165 @@ shortcut_6.addEventListener("mouseenter", () => {
 shortcut_6.addEventListener("mouseout", () => {
     second_mini_popup.classList.remove('transition_opacity')
 });
+
+shortcut_7.addEventListener("mouseenter", () => {
+    third_mini_popup.classList.add('transition_opacity')
+});
+shortcut_7.addEventListener("mouseout", () => {
+    third_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_8.addEventListener("mouseenter", () => {
+    third_mini_popup.classList.add('transition_opacity')
+});
+shortcut_8.addEventListener("mouseout", () => {
+    third_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_9.addEventListener("mouseenter", () => {
+    third_mini_popup.classList.add('transition_opacity')
+});
+shortcut_9.addEventListener("mouseout", () => {
+    third_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_10.addEventListener("mouseenter", () => {
+    fourth_mini_popup.classList.add('transition_opacity')
+});
+shortcut_10.addEventListener("mouseout", () => {
+    fourth_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_11.addEventListener("mouseenter", () => {
+    fourth_mini_popup.classList.add('transition_opacity')
+});
+shortcut_11.addEventListener("mouseout", () => {
+    fourth_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_12.addEventListener("mouseenter", () => {
+    fourth_mini_popup.classList.add('transition_opacity')
+});
+shortcut_12.addEventListener("mouseout", () => {
+    fourth_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_13.addEventListener("mouseenter", () => {
+    fifth_mini_popup.classList.add('transition_opacity')
+});
+shortcut_13.addEventListener("mouseout", () => {
+    fifth_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_14.addEventListener("mouseenter", () => {
+    fifth_mini_popup.classList.add('transition_opacity')
+});
+shortcut_14.addEventListener("mouseout", () => {
+    fifth_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_15.addEventListener("mouseenter", () => {
+    fifth_mini_popup.classList.add('transition_opacity')
+});
+shortcut_15.addEventListener("mouseout", () => {
+    fifth_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_16.addEventListener("mouseenter", () => {
+    sixth_mini_popup.classList.add('transition_opacity')
+});
+shortcut_16.addEventListener("mouseout", () => {
+    sixth_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_17.addEventListener("mouseenter", () => {
+    sixth_mini_popup.classList.add('transition_opacity')
+});
+shortcut_17.addEventListener("mouseout", () => {
+    sixth_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_18.addEventListener("mouseenter", () => {
+    sixth_mini_popup.classList.add('transition_opacity')
+});
+shortcut_18.addEventListener("mouseout", () => {
+    sixth_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_19.addEventListener("mouseenter", () => {
+    seventh_mini_popup.classList.add('transition_opacity')
+});
+shortcut_19.addEventListener("mouseout", () => {
+    seventh_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_20.addEventListener("mouseenter", () => {
+    seventh_mini_popup.classList.add('transition_opacity')
+});
+shortcut_20.addEventListener("mouseout", () => {
+    seventh_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_21.addEventListener("mouseenter", () => {
+    seventh_mini_popup.classList.add('transition_opacity')
+});
+shortcut_21.addEventListener("mouseout", () => {
+    seventh_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_22.addEventListener("mouseenter", () => {
+    eighth_mini_popup.classList.add('transition_opacity')
+});
+shortcut_22.addEventListener("mouseout", () => {
+    eighth_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_23.addEventListener("mouseenter", () => {
+    eighth_mini_popup.classList.add('transition_opacity')
+});
+shortcut_23.addEventListener("mouseout", () => {
+    eighth_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_24.addEventListener("mouseenter", () => {
+    eighth_mini_popup.classList.add('transition_opacity')
+});
+shortcut_24.addEventListener("mouseout", () => {
+    eighth_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_25.addEventListener("mouseenter", () => {
+    ninth_mini_popup.classList.add('transition_opacity')
+});
+shortcut_25.addEventListener("mouseout", () => {
+    ninth_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_26.addEventListener("mouseenter", () => {
+    ninth_mini_popup.classList.add('transition_opacity')
+});
+shortcut_26.addEventListener("mouseout", () => {
+    ninth_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_27.addEventListener("mouseenter", () => {
+    tenth_mini_popup.classList.add('transition_opacity')
+});
+shortcut_27.addEventListener("mouseout", () => {
+    tenth_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_28.addEventListener("mouseenter", () => {
+    tenth_mini_popup.classList.add('transition_opacity')
+});
+shortcut_28.addEventListener("mouseout", () => {
+    tenth_mini_popup.classList.remove('transition_opacity')
+});
+
+shortcut_29.addEventListener("mouseenter", () => {
+    tenth_mini_popup.classList.add('transition_opacity')
+});
+shortcut_29.addEventListener("mouseout", () => {
+    tenth_mini_popup.classList.remove('transition_opacity')
+});
+
