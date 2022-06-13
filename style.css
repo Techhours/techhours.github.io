@@ -4,6 +4,24 @@ body, html {
     height: 100%;   
 }
 
+body {
+    overflow-x: hidden; 
+}
+
+body { 
+    animation: fadeInAnimation ease 2s; 
+    animation-fill-mode: forwards; 
+    animation-iteration-count: 1; 
+    } 
+    @keyframes fadeInAnimation { 
+    0% { 
+    opacity: 0; 
+    } 
+    100% { 
+    opacity: 1; 
+    } 
+} 
+
 .wrappert {
     height: 100%; 
     width: 100%;
@@ -339,20 +357,141 @@ a:hover{
     left: 37%;
 }
 
+.second_popup_first_arrow {
+    top: 19%;
+    left: 37%;
+}
+
 .second_popup_second_arrow {
-    top: 55%;
+    top: 54%;
+    left: 37%;
+}
+
+.second_popup_third_arrow {
+    top: 87%;
+    left: 37%;
+}
+
+.third_popup_first_arrow {
+    top: 22%;
     left: 40%;
 }
 
-.fourth_popup_third_arrow {
-    top: 93.5%;
+.third_popup_second_arrow {
+    top: 52%;
     left: 40%;
+}
+
+.third_popup_third_arrow {
+    top: 83%;
+    left: 40%;
+}
+
+.fourth_popup_first_arrow {
+    top: 21%;
+    left: 37%;
+}
+
+.fourth_popup_second_arrow {
+    top: 53%;
+    left: 37%;
+}
+
+.fourth_popup_third_arrow {
+    top: 94.5%;
+    left: 37%;
+}
+
+.fifth_popup_first_arrow {
+    top: 22%;
+    left: 37%;
+}
+
+.fifth_popup_second_arrow {
+    top: 54.5%;
+    left: 37%;
+}
+
+.fifth_popup_third_arrow {
+    top: 93.5%;
+    left: 37%;
+}
+
+.sixth_popup_first_arrow {
+    top: 24.5%;
+    left: 37%;
+}
+
+.sixth_popup_second_arrow {
+    top: 57%;
+    left: 37%;
+}
+
+.sixth_popup_third_arrow {
+    top: 94.5%;
+    left: 37%;
+}
+
+.seventh_popup_first_arrow {
+    top: 24%;
+    left: 37%;
+}
+
+.seventh_popup_second_arrow {
+    top: 52%;
+    left: 37%;
+}
+
+.seventh_popup_third_arrow {
+    top: 87.5%;
+    left: 37%;
+}
+
+.eighth_popup_first_arrow {
+    top: 31.5%;
+    left: 38%;
+}
+
+.eighth_popup_second_arrow {
+    top: 65%;
+    left: 38%;
+}
+
+.eighth_popup_third_arrow {
+    top: 94%;
+    left: 38%;
+}
+
+.ninth_popup_first_arrow {
+    top: 27%;
+    left: 38%;
+}
+
+.ninth_popup_second_arrow {
+    top: 67.5%;
+    left: 38%;
+}
+
+.tenth_popup_first_arrow {
+    top: 25%;
+    left: 37%;
+}
+
+.tenth_popup_second_arrow {
+    top: 54.5%;
+    left: 37%;
+}
+
+.tenth_popup_third_arrow {
+    top: 92%;
+    left: 37%;
 }
 
 .transition_opacity {
     opacity: 100%;
     z-index: 3000;
 }
+
 
 /*  ------------------ Partie de gauche ---------------- */
 
@@ -413,9 +552,34 @@ a:hover{
     height:200px;
     opacity:0.2;
     text-align:center; 
-     transition:opacity 2s;
-      -webkit-transition: opacity 2s;  
+    transition:opacity 2s;
+    -webkit-transition: opacity 2s;  
   }
+  
   .transition_box:hover{
   opacity:1;
   }
+
+  .moved {
+    transition: transform 1000ms ease-in-out;
+    transform: translate(-97%);
+  }
+
+  /* Partie horaires */
+
+.image_horaires {
+    z-index: 1000;
+    position: absolute;
+    top: 0%;
+    left: 98%;
+    width: 70%;
+    height: 100%;
+    
+}
+
+.image_horaire_2 {
+    z-index: 100;
+    background: url('img/prochaine_pres.png') no-repeat center;
+    background-size: 100% 100%;
+    margin:auto;
+}

@@ -19,6 +19,7 @@ const ninth_popup = document.querySelector('.ninth_popup');
 const tenth_btn = document.querySelector('.tenth_button');
 const tenth_popup = document.querySelector('.tenth_popup');
 const background = document.querySelector('.wrappert');
+const planning = document.querySelector('.image_horaires');
 
 const shortcut_1 = document.querySelector('.shortcut_1')
 const shortcut_2 = document.querySelector('.shortcut_2')
@@ -76,6 +77,7 @@ let isVisible10 = false; let clicked10 = false; let block10 = false;
 
 
 
+
 background.addEventListener('click',  () => {
     if (!clicked1 && block1 == false) { first_popup.classList.remove('transition_opacity'); isVisible1 = false; }
     if (!clicked2 && block2 == false) { second_popup.classList.remove('transition_opacity'); isVisible2 = false; }
@@ -88,26 +90,16 @@ background.addEventListener('click',  () => {
     if (!clicked9 && block9 == false) { ninth_popup.classList.remove('transition_opacity'); isVisible9 = false; }
     if (!clicked10 && block10 == false) { tenth_popup.classList.remove('transition_opacity'); isVisible10 = false; }
 
-    clicked1 = false;
-    clicked2 = false;
-    clicked3 = false;
-    clicked4 = false;
-    block1 = false;
-    block2 = false;
-    block3 = false;
-    block4 = false;
-    clicked5 = false;
-    block5 = false;
-    clicked6 = false;
-    block6 = false;
-    clicked7 = false;
-    block7 = false;
-    clicked8 = false;
-    block8 = false;
-    clicked9 = false;
-    block9 = false;
-    clicked10 = false;
-    block10 = false;
+    clicked1 = false; block1 = false;
+    clicked2 = false; block2 = false;
+    clicked3 = false; block3 = false;
+    clicked4 = false; block4 = false;
+    clicked5 = false; block5 = false;
+    clicked6 = false; block6 = false;
+    clicked7 = false; block7 = false;
+    clicked8 = false; block8 = false;
+    clicked9 = false; block9 = false;
+    clicked10 = false; block10 = false;
     
 });
 
@@ -412,5 +404,12 @@ shortcut_29.addEventListener("mouseenter", () => {
 });
 shortcut_29.addEventListener("mouseout", () => {
     tenth_mini_popup.classList.remove('transition_opacity')
+});
+
+planning.addEventListener("mouseenter", () => {
+    planning.classList.add('moved')
+});
+planning.addEventListener("mouseout", () => {
+    planning.classList.remove('moved')
 });
 
