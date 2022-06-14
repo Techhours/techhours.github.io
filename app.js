@@ -20,6 +20,7 @@ const tenth_btn = document.querySelector('.tenth_button');
 const tenth_popup = document.querySelector('.tenth_popup');
 const background = document.querySelector('.wrappert');
 const planning = document.querySelector('.image_horaires');
+const exit_planning = document.querySelector('.exit-planning')
 
 const shortcut_1 = document.querySelector('.shortcut_1')
 const shortcut_2 = document.querySelector('.shortcut_2')
@@ -45,7 +46,6 @@ const shortcut_21 = document.querySelector('.shortcut_21')
 const shortcut_22 = document.querySelector('.shortcut_22')
 const shortcut_23 = document.querySelector('.shortcut_23')
 const shortcut_24 = document.querySelector('.shortcut_24')
-// const shortcut_25 = document.querySelector('.shortcut_25')
 const shortcut_26 = document.querySelector('.shortcut_26')
 const shortcut_27 = document.querySelector('.shortcut_27')
 const shortcut_28 = document.querySelector('.shortcut_28')
@@ -61,7 +61,7 @@ const eighth_mini_popup = document.querySelector('.eighth_mini_popup')
 const ninth_mini_popup = document.querySelector('.ninth_mini_popup')
 const tenth_mini_popup = document.querySelector('.tenth_mini_popup')
 
-
+const actual_hour = document.querySelector('.hour_actual')
 
 
 let isVisible1 = false; let clicked1 = false; let block1 = false;
@@ -74,6 +74,8 @@ let isVisible7 = false; let clicked7 = false; let block7 = false;
 let isVisible8 = false; let clicked8 = false; let block8 = false;
 let isVisible9 = false; let clicked9 = false; let block9 = false;
 let isVisible10 = false; let clicked10 = false; let block10 = false;
+
+var now = new Date();
 
 
 
@@ -371,13 +373,6 @@ shortcut_24.addEventListener("mouseout", () => {
     eighth_mini_popup.classList.remove('transition_opacity')
 });
 
-// shortcut_25.addEventListener("mouseenter", () => {
-//     ninth_mini_popup.classList.add('transition_opacity')
-// });
-// shortcut_25.addEventListener("mouseout", () => {
-//     ninth_mini_popup.classList.remove('transition_opacity')
-// });
-
 shortcut_26.addEventListener("mouseenter", () => {
     ninth_mini_popup.classList.add('transition_opacity')
 });
@@ -408,8 +403,22 @@ shortcut_29.addEventListener("mouseout", () => {
 
 planning.addEventListener("mouseenter", () => {
     planning.classList.add('moved')
+    var hour = Number(('0'+now.getHours()).slice(-2));
+    if (hour < 11) actual_hour.style.left = '-41%'
+    else if (hour >= 14) actual_hour.style.left = '44.70%'
+    else {
+        now = new Date()
+        minutes_test  = Number(('0'+now.getMinutes()).slice(-2));
+        var minutes_pourcentage = ((hour - 11) * 60 + minutes_test) / 180 ;
+        var add_pourcentage = -41 + (minutes_pourcentage * 85.70);
+        nb_pixel = add_pourcentage.toString() + '%'
+        actual_hour.style.left = nb_pixel
+        console.log(actual_hour.style.left)
+    }
 });
-planning.addEventListener("mouseout", () => {
+
+exit_planning.addEventListener("click", () => {
     planning.classList.remove('moved')
 });
+
 
