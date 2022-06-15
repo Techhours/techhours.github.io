@@ -76,7 +76,12 @@ let isVisible9 = false; let clicked9 = false; let block9 = false;
 let isVisible10 = false; let clicked10 = false; let block10 = false;
 
 var now = new Date();
-const first_column = document.querySelector('.first_column')
+const first_column = document.querySelectorAll('.first_column')
+const second_column = document.querySelectorAll('.second_column')
+const third_column = document.querySelectorAll('.third_column')
+const fourth_column = document.querySelectorAll('.fourth_column')
+const fifth_column = document.querySelectorAll('.fifth_column')
+const sixth_column = document.querySelectorAll('.sixth_column')
 
 
 
@@ -416,10 +421,46 @@ planning.addEventListener("mouseenter", () => {
         actual_hour.style.left = nb_pixel
         console.log(actual_hour.style.left)
     }
+
+    add_display_none(first_column)
+    add_display_none(second_column)
+    add_display_none(third_column)
+    add_display_none(fourth_column)
+    add_display_none(fifth_column)
+    add_display_none(sixth_column)
+
+    if (hour >= 11 && hour < 12) {
+        if (minutes_test < 30) add_display_inline(first_column)
+        else add_display_inline(second_column)
+    }
+    else if (hour < 13) {
+        if (minutes_test < 30) add_display_inline(third_column)
+        else add_display_inline(fourth_column)
+    }
+    else if (hour < 14) {
+        if (minutes_test < 30) add_display_inline(fifth_column)
+        else add_display_inline(sixth_column)
+    }
+
+    
 });
 
 exit_planning.addEventListener("click", () => {
     planning.classList.remove('moved')
 });
+
+function add_display_none(myNodeList) {
+    for (var i = 0; i < myNodeList.length; ++i) {
+        var item = myNodeList[i];  // L'appel de myNodeList.item(i) n'est pas nécessaire en JavaScript
+        item.style.display = 'none'
+      }
+};
+
+function add_display_inline(myNodeList) {
+    for (var i = 0; i < myNodeList.length; ++i) {
+        var item = myNodeList[i];  // L'appel de myNodeList.item(i) n'est pas nécessaire en JavaScript
+        item.style.display = 'inline'
+      }
+};
 
 
