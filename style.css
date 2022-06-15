@@ -591,6 +591,11 @@ a:hover{
     height: 5%;
 }
 
-.test_test {
+.cursor_pointer {
     cursor: pointer;
 }
+
+.first_column {
+    display: inline;
+}
+

@@ -76,6 +76,7 @@ let isVisible9 = false; let clicked9 = false; let block9 = false;
 let isVisible10 = false; let clicked10 = false; let block10 = false;
 
 var now = new Date();
+const first_column = document.querySelector('.first_column')
 
 
 
@@ -414,6 +415,13 @@ planning.addEventListener("mouseenter", () => {
         nb_pixel = add_pourcentage.toString() + '%'
         actual_hour.style.left = nb_pixel
         console.log(actual_hour.style.left)
+    }
+
+    first_column.style.display = 'none'
+
+    if (hour >= 11 && hour < 12) {
+        if (minutes_test < 30) { first_column.style.display = 'inline'}
+        else { }
     }
 });
 
