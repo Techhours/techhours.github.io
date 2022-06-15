@@ -416,13 +416,6 @@ planning.addEventListener("mouseenter", () => {
         actual_hour.style.left = nb_pixel
         console.log(actual_hour.style.left)
     }
-
-    first_column.style.display = 'none'
-
-    if (hour >= 11 && hour < 12) {
-        if (minutes_test < 30) { first_column.style.display = 'inline'}
-        else { }
-    }
 });
 
 exit_planning.addEventListener("click", () => {
