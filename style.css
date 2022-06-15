@@ -197,8 +197,8 @@ a:hover{
     background: url('img/POPUP_Grace_Hopper.png') no-repeat center;
     background-size: 100% 100%;
     margin:auto;
-    top: 28%;
-    left: 50%;
+    top: 28.5%;
+    left: 49%;
 }
 
 .second_popup {
@@ -206,7 +206,7 @@ a:hover{
     background-size: 100% 100%;
     margin:auto;
     top: 33%;
-    left: 5%;
+    left: 9%;
 }
 
 .third_popup {
@@ -214,7 +214,7 @@ a:hover{
     background-size: 100% 100%;
     margin:auto;
     top: 38%;
-    left: 8%;
+    left: 13%;
 }
 
 .fourth_popup {
@@ -222,7 +222,7 @@ a:hover{
     background-size: 100% 100%;
     margin:auto;
     top: 25%;
-    left: 39%;
+    left: 45%;
 }
 
 .fifth_popup {
@@ -230,7 +230,7 @@ a:hover{
     background-size: 100% 100%;
     margin:auto;
     top: 25%;
-    left: 46%;
+    left: 50.5%;
 }
 
 .sixth_popup {
@@ -238,7 +238,7 @@ a:hover{
     background-size: 100% 100%;
     margin:auto;
     top: 15%;
-    left: 21.5%;
+    left: 26.5%;
 }
 
 .seventh_popup {
@@ -246,7 +246,7 @@ a:hover{
     background-size: 100% 100%;
     margin:auto;
     top: 22%;
-    left: 34%;
+    left: 39%;
 }
 
 .eighth_popup {
@@ -254,7 +254,7 @@ a:hover{
     background-size: 100% 100%;
     margin:auto;
     top: 26.5%;
-    left: 37.5%;
+    left: 42.5%;
 }
 
 .ninth_popup {
@@ -262,15 +262,15 @@ a:hover{
     background-size: 100% 100%;
     margin:auto;
     top: 31%;
-    left: 42%;
+    left: 47%;
 }
 
 .tenth_popup {
     background: url('img/POPUP_Einstein.png') no-repeat center;
     background-size: 100% 100%;
     margin:auto;
-    top: 31%;
-    left: 42%;
+    top: 30%;
+    left: 44%;
 }
 
 .first_mini_popup {
@@ -592,6 +592,10 @@ a:hover{
 }
 
 .cursor_pointer {
+    cursor: pointer;
+}
+
+.exit-planning {
     cursor: pointer;
 }
 
