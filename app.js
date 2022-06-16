@@ -429,6 +429,7 @@ planning.addEventListener("mouseenter", () => {
     add_display_none(fifth_column)
     add_display_none(sixth_column)
 
+    if (hour < 11) add_display_inline(first_column)
     if (hour >= 11 && hour < 12) {
         if (minutes_test < 30) add_display_inline(first_column)
         else add_display_inline(second_column)
@@ -441,6 +442,7 @@ planning.addEventListener("mouseenter", () => {
         if (minutes_test < 30) add_display_inline(fifth_column)
         else add_display_inline(sixth_column)
     }
+    else if (hour > 14) add_display_inline(sixth_column)
 
     
 });
@@ -462,5 +464,10 @@ function add_display_inline(myNodeList) {
         item.style.display = 'inline'
       }
 };
+
+function ch_zoom() {
+      document.body.style.zoom = "100%";
+      setTimeout(ch_zoom, 100);
+}
 
 
