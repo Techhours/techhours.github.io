@@ -21,6 +21,7 @@ const tenth_popup = document.querySelector('.tenth_popup');
 const background = document.querySelector('.wrappert');
 const planning = document.querySelector('.image_horaires');
 const exit_planning = document.querySelector('.exit-planning')
+const open_horaire = document.querySelector('.open_horaire')
 
 const shortcut_1 = document.querySelector('.shortcut_1')
 const shortcut_2 = document.querySelector('.shortcut_2')
@@ -82,7 +83,6 @@ const third_column = document.querySelectorAll('.third_column')
 const fourth_column = document.querySelectorAll('.fourth_column')
 const fifth_column = document.querySelectorAll('.fifth_column')
 const sixth_column = document.querySelectorAll('.sixth_column')
-
 
 
 
@@ -407,7 +407,8 @@ shortcut_29.addEventListener("mouseout", () => {
     tenth_mini_popup.classList.remove('transition_opacity')
 });
 
-planning.addEventListener("mouseenter", () => {
+open_horaire.addEventListener("click", () => {
+
     planning.classList.add('moved')
     var hour = Number(('0'+now.getHours()).slice(-2));
     if (hour < 11) actual_hour.style.left = '-41%'
@@ -444,11 +445,47 @@ planning.addEventListener("mouseenter", () => {
     }
     else if (hour > 14) add_display_inline(sixth_column)
 
-    
 });
 
 exit_planning.addEventListener("click", () => {
     planning.classList.remove('moved')
+    var hour = Number(('0'+now.getHours()).slice(-2));
+    if (hour < 11) actual_hour.style.left = '-41%'
+    else if (hour >= 14) actual_hour.style.left = '44.70%'
+    else {
+        now = new Date()
+        minutes_test  = Number(('0'+now.getMinutes()).slice(-2));
+        var minutes_pourcentage = ((hour - 11) * 60 + minutes_test) / 180 ;
+        var add_pourcentage = -41 + (minutes_pourcentage * 85.70);
+        nb_pixel = add_pourcentage.toString() + '%'
+        actual_hour.style.left = nb_pixel
+        console.log(actual_hour.style.left)
+    }
+
+    add_display_none(first_column)
+    add_display_none(second_column)
+    add_display_none(third_column)
+    add_display_none(fourth_column)
+    add_display_none(fifth_column)
+    add_display_none(sixth_column)
+
+    if (hour < 11) add_display_inline(first_column)
+    if (hour >= 11 && hour < 12) {
+        if (minutes_test < 25) add_display_inline(first_column)
+        else add_display_inline(second_column)
+        if (minutes_test >= 55) add_display_inline(third_column)
+    }
+    else if (hour < 13) {
+        if (minutes_test < 25) add_display_inline(third_column)
+        else add_display_inline(fourth_column)
+        if (minutes_test >= 55) add_display_inline(fifth_column)
+    }
+    else if (hour < 14) {
+        if (minutes_test < 25) add_display_inline(fifth_column)
+        else add_display_inline(sixth_column)
+    }
+    else if (hour > 14) add_display_inline(sixth_column)
+
 });
 
 function add_display_none(myNodeList) {
