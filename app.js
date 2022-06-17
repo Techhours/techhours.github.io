@@ -23,6 +23,8 @@ const planning = document.querySelector('.image_horaires');
 const exit_planning = document.querySelector('.exit-planning')
 const open_horaire = document.querySelector('.open_horaire')
 
+var open = 0
+
 const shortcut_1 = document.querySelector('.shortcut_1')
 const shortcut_2 = document.querySelector('.shortcut_2')
 const shortcut_3 = document.querySelector('.shortcut_3')
@@ -408,48 +410,55 @@ shortcut_29.addEventListener("mouseout", () => {
 });
 
 open_horaire.addEventListener("click", () => {
-
-    planning.classList.add('moved')
-    var hour = Number(('0'+now.getHours()).slice(-2));
-    if (hour < 11) actual_hour.style.left = '-41%'
-    else if (hour >= 14) actual_hour.style.left = '44.70%'
+    if (open == 0) {
+        planning.classList.add('moved')
+        var hour = Number(('0'+now.getHours()).slice(-2));
+        if (hour < 11) actual_hour.style.left = '-41%'
+        else if (hour >= 14) actual_hour.style.left = '44.70%'
+        else {
+            now = new Date()
+            minutes_test  = Number(('0'+now.getMinutes()).slice(-2));
+            var minutes_pourcentage = ((hour - 11) * 60 + minutes_test) / 180 ;
+            var add_pourcentage = -41 + (minutes_pourcentage * 85.70);
+            nb_pixel = add_pourcentage.toString() + '%'
+            actual_hour.style.left = nb_pixel
+            console.log(actual_hour.style.left)
+        }
+    
+        add_display_none(first_column)
+        add_display_none(second_column)
+        add_display_none(third_column)
+        add_display_none(fourth_column)
+        add_display_none(fifth_column)
+        add_display_none(sixth_column)
+    
+        if (hour < 11) add_display_inline(first_column)
+        if (hour >= 11 && hour < 12) {
+            if (minutes_test < 30) add_display_inline(first_column)
+            else add_display_inline(second_column)
+        }
+        else if (hour < 13) {
+            if (minutes_test < 30) add_display_inline(third_column)
+            else add_display_inline(fourth_column)
+        }
+        else if (hour < 14) {
+            if (minutes_test < 30) add_display_inline(fifth_column)
+            else add_display_inline(sixth_column)
+        }
+        else if (hour > 14) add_display_inline(sixth_column)
+        open = 1;
+    }
     else {
-        now = new Date()
-        minutes_test  = Number(('0'+now.getMinutes()).slice(-2));
-        var minutes_pourcentage = ((hour - 11) * 60 + minutes_test) / 180 ;
-        var add_pourcentage = -41 + (minutes_pourcentage * 85.70);
-        nb_pixel = add_pourcentage.toString() + '%'
-        actual_hour.style.left = nb_pixel
-        console.log(actual_hour.style.left)
-    }
-
-    add_display_none(first_column)
-    add_display_none(second_column)
-    add_display_none(third_column)
-    add_display_none(fourth_column)
-    add_display_none(fifth_column)
-    add_display_none(sixth_column)
-
-    if (hour < 11) add_display_inline(first_column)
-    if (hour >= 11 && hour < 12) {
-        if (minutes_test < 30) add_display_inline(first_column)
-        else add_display_inline(second_column)
-    }
-    else if (hour < 13) {
-        if (minutes_test < 30) add_display_inline(third_column)
-        else add_display_inline(fourth_column)
-    }
-    else if (hour < 14) {
-        if (minutes_test < 30) add_display_inline(fifth_column)
-        else add_display_inline(sixth_column)
-    }
-    else if (hour > 14) add_display_inline(sixth_column)
+        planning.classList.remove('moved')
+        open = 0 }
+    
 
 });
 
 exit_planning.addEventListener("click", () => {
     planning.classList.remove('moved')
     var hour = Number(('0'+now.getHours()).slice(-2));
+
     if (hour < 11) actual_hour.style.left = '-41%'
     else if (hour >= 14) actual_hour.style.left = '44.70%'
     else {
@@ -485,7 +494,7 @@ exit_planning.addEventListener("click", () => {
         else add_display_inline(sixth_column)
     }
     else if (hour > 14) add_display_inline(sixth_column)
-
+    open = 0
 });
 
 function add_display_none(myNodeList) {
@@ -506,5 +515,9 @@ function ch_zoom() {
       document.body.style.zoom = "100%";
       setTimeout(ch_zoom, 100);
 }
+
+
+// pour les fireworks
+
 
 
