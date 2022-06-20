@@ -413,6 +413,7 @@ open_horaire.addEventListener("click", () => {
     if (open == 0) {
         planning.classList.add('moved')
         var hour = Number(('0'+now.getHours()).slice(-2));
+        minutes_test  = Number(('0'+now.getMinutes()).slice(-2));
         if (hour < 11) actual_hour.style.left = '-41%'
         else if (hour >= 14) actual_hour.style.left = '44.70%'
         else {
@@ -450,7 +451,8 @@ open_horaire.addEventListener("click", () => {
     }
     else {
         planning.classList.remove('moved')
-        open = 0 }
+        open = 0 
+    }
     
 
 });
