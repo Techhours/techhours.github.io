@@ -412,8 +412,10 @@ shortcut_29.addEventListener("mouseout", () => {
 open_horaire.addEventListener("click", () => {
     if (open == 0) {
         planning.classList.add('moved')
+
         var hour = Number(('0'+now.getHours()).slice(-2));
         minutes_test  = Number(('0'+now.getMinutes()).slice(-2));
+
         if (hour < 11) actual_hour.style.left = '-41%'
         else if (hour >= 14) actual_hour.style.left = '44.70%'
         else {
@@ -435,18 +437,22 @@ open_horaire.addEventListener("click", () => {
     
         if (hour < 11) add_display_inline(first_column)
         if (hour >= 11 && hour < 12) {
-            if (minutes_test < 30) add_display_inline(first_column)
-            else add_display_inline(second_column)
+            if (minutes_test <= 35) add_display_inline(first_column)
+            if (minutes_test >= 25) add_display_inline(second_column)
+            if (minutes_test >= 55) add_display_inline(third_column)
         }
         else if (hour < 13) {
-            if (minutes_test < 30) add_display_inline(third_column)
-            else add_display_inline(fourth_column)
+            if (minutes_test <= 5) add_display_inline(second_column)
+            if (minutes_test <= 35) add_display_inline(third_column)
+            if (minutes_test >= 25) add_display_inline(fourth_column)
+            if (minutes_test >= 55) add_display_inline(fifth_column)
         }
         else if (hour < 14) {
-            if (minutes_test < 30) add_display_inline(fifth_column)
-            else add_display_inline(sixth_column)
+            if (minutes_test <= 5) add_display_inline(fourth_column)
+            if (minutes_test <= 35) add_display_inline(fifth_column)
+            if (minutes_test >= 25) add_display_inline(sixth_column)
         }
-        else if (hour > 14) add_display_inline(sixth_column)
+        else if (hour >= 14) add_display_inline(sixth_column)
         open = 1;
     }
     else {
@@ -460,6 +466,7 @@ open_horaire.addEventListener("click", () => {
 exit_planning.addEventListener("click", () => {
     planning.classList.remove('moved')
     var hour = Number(('0'+now.getHours()).slice(-2));
+    minutes_test  = Number(('0'+now.getMinutes()).slice(-2));
 
     if (hour < 11) actual_hour.style.left = '-41%'
     else if (hour >= 14) actual_hour.style.left = '44.70%'
@@ -481,21 +488,24 @@ exit_planning.addEventListener("click", () => {
     add_display_none(sixth_column)
 
     if (hour < 11) add_display_inline(first_column)
-    if (hour >= 11 && hour < 12) {
-        if (minutes_test < 25) add_display_inline(first_column)
-        else add_display_inline(second_column)
-        if (minutes_test >= 55) add_display_inline(third_column)
-    }
-    else if (hour < 13) {
-        if (minutes_test < 25) add_display_inline(third_column)
-        else add_display_inline(fourth_column)
-        if (minutes_test >= 55) add_display_inline(fifth_column)
-    }
-    else if (hour < 14) {
-        if (minutes_test < 25) add_display_inline(fifth_column)
-        else add_display_inline(sixth_column)
-    }
-    else if (hour > 14) add_display_inline(sixth_column)
+        if (hour >= 11 && hour < 12) {
+            if (minutes_test <= 35) add_display_inline(first_column)
+            if (minutes_test >= 25) add_display_inline(second_column)
+            if (minutes_test >= 55) add_display_inline(third_column)
+        }
+        else if (hour < 13) {
+            if (minutes_test <= 5) add_display_inline(second_column)
+            if (minutes_test <= 35) add_display_inline(third_column)
+            if (minutes_test >= 25) add_display_inline(fourth_column)
+            if (minutes_test >= 55) add_display_inline(fifth_column)
+        }
+        else if (hour < 14) {
+            if (minutes_test <= 5) add_display_inline(fourth_column)
+            if (minutes_test <= 35) add_display_inline(fifth_column)
+            if (minutes_test >= 25) add_display_inline(sixth_column)
+        }
+        else if (hour >= 14) add_display_inline(sixth_column)
+
     open = 0
 });
 
