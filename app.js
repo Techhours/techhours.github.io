@@ -41,7 +41,6 @@ const shortcut_13 = document.querySelector('.shortcut_13')
 const shortcut_14 = document.querySelector('.shortcut_14')
 const shortcut_15 = document.querySelector('.shortcut_15')
 const shortcut_16 = document.querySelector('.shortcut_16')
-const shortcut_17 = document.querySelector('.shortcut_17')
 const shortcut_18 = document.querySelector('.shortcut_18')
 const shortcut_19 = document.querySelector('.shortcut_19')
 const shortcut_20 = document.querySelector('.shortcut_20')
@@ -322,13 +321,6 @@ shortcut_16.addEventListener("mouseenter", () => {
     sixth_mini_popup.classList.add('transition_opacity')
 });
 shortcut_16.addEventListener("mouseout", () => {
-    sixth_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_17.addEventListener("mouseenter", () => {
-    sixth_mini_popup.classList.add('transition_opacity')
-});
-shortcut_17.addEventListener("mouseout", () => {
     sixth_mini_popup.classList.remove('transition_opacity')
 });
 
